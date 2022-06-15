@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/responsif.css">
+</head>
+<body>
+    <div class="register-form-container">
+        <form data-multi-step class="multi-step-form">
+            <div class="card" data-step>
+                <h3 class="step-title">step 1</h3>
+                <h2>register account</h2>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="box" placeholder="Enter your email here">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="box" placeholder="Enter your password here">
+                </div>
+                <div class="form-group">
+                    <label for="repassword">Re-Password</label>
+                    <input type="password" name="repassword" id="repassword" class="box" placeholder="Repeat your password here">
+                </div>
+                <div class="tombol">
+                    <button type="button" class="btn" name="check" data-next>Next</button>
+                    <p>have a account ? <a href="index.html">back to home</a></p>
+                </div>
+            </div>
+
+            <div class="card" data-step>
+                <h3 class="step-title">step 2</h3>
+                <h2>personal info</h2>
+                <div class="form-group">
+                    <label for="name">nama lengkap</label>
+                    <input type="text" name="name" id="name" class="box">
+                </div>
+                <div class="form-group">
+                    <label for="gender">gender</label>
+                    <div class="container">
+                        <div class="opsi1">
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Pria</label>
+                        </div>
+                        <div class="opsi2">
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Wanita</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal">tanggal lahir</label>
+                    <input type="date" class="box" id="tanggal">
+                </div>
+                <div class="form-group">
+                    <label for="pekerjaan">pekerjaan</label>
+                    <input type="text" name="pekerjaan" id="pekerjaan" class="box">
+                </div>
+                <div class="form-group">
+                    <label for="pekerjaan">warga negara indonesia ?</label>
+                    <div class="container">
+                        <div class="opsi1">
+                            <input type="radio" name="pekerjaan" id="iya">
+                            <label for="iya">iya</label>
+                        </div>
+                        <div class="opsi2">
+                            <input type="radio" name="pekerjaan" id="tidak">
+                            <label for="tidak">tidak</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="tempat tinggal">tempat tinggal</label>
+                    <input type="text" name="tempat tinggal" id="tempat tinggal" class="box">
+                </div>
+                <div class="tombol">
+                    <button type="button" class="btn" data-previous>Previous</button>
+                    <button type="button" class="btn" data-next>Next</button>
+                </div>
+            </div>
+
+            <div class="card" data-step>
+                <h3 class="step-title">step 3</h3>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="file" name="firstName" id="firstName" class="box">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" class="box">
+                </div>
+                <div class="tombol">
+                    <button type="button" class="btn" data-previous>Previous</button>
+                    <button type="submit" class="btn" >Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="js/register-script.js"></script>
+</body>
+</html>

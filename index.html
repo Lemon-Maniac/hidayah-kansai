@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="web profile pengajian">
+        <title>Hidayah Kansai</title>
+        
+        <!-- link untuk font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        
+        <!-- link untuk css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsif.css">
+    </head>
+    <body>
+    <!-- header section start  -->
+    <header>
+        <div class="fas fa-bars" id="menu-bar"></div>
+        <a href="#" class="logo">logo</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#berita">berita</a>
+            <a href="#kegiatan">kegiatan</a>
+            <a href="#contact">kontak</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </header>
+
+    
+
+    <!-- header section end -->
+
+    <!-- login form container     -->
+    <div class="login-form-container">
+
+
+        <i class="fas fa-times" id="form-close"></i>
+        
+        <form action="function/login-form.php" method="post">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter you email" name="email">
+            <input type="password" class="box" placeholder="Enter you password" name="password">
+            <input type="submit" value="login" class="btn" name="login">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password <a href="#">click here</a></p>
+            <p>don't have a account ? <a href="register.html">register now</a></p>
+
+        </form>
+
+    </div>
+    <!-- login form end     -->
+
+    <!-- home section start -->
+    <div class="home-bg">
+        <section class="home" id="home">
+            <div class="content">
+                <h3>pengajian hidayah kansai</h3>
+                <p>organisasi musilmah untuk umum yang berafilasi di kansai, jepang.</p>
+                <a href="homepage.html" class="btn">discover more</a>
+            </div>
+        </section>
+    </div>
+    <!-- home section end -->
+
+    <!-- berita section start -->
+    <section class="berita" id="berita">
+        
+    </section>
+    <!-- berita section end -->
+
+    <!-- kontak section start -->
+    <section class="contact" id="contact">
+        
+    </section>
+    <!-- kontak section end -->
+
+
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>organization</h4>
+                    <ul>
+                        <li><a href="homepage.html">about us</a></li>
+                        <li><a href="homepage.html#team">our team</a></li>
+                        <li><a href="#">our program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="register.html">register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <!-- footer end -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
